@@ -1,2 +1,0 @@
-# Kedro
-Teste Kedro
