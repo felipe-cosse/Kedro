@@ -4,101 +4,307 @@
 #
 #    pip-compile /home/felipe/Downloads/testkedro/src/requirements.in
 #
-anyconfig==0.9.10         # via kedro
-arrow==0.15.4             # via jinja2-time
-atomicwrites==1.3.0       # via pytest
-attrs==19.3.0             # via jsonschema, pytest
-backcall==0.1.0           # via ipython
-binaryornot==0.4.4        # via cookiecutter
-bleach==3.1.0             # via nbconvert
-boto3==1.10.20            # via s3fs
-botocore==1.13.20         # via boto3, s3fs, s3transfer
-certifi==2019.9.11        # via requests
-chardet==3.0.4            # via binaryornot, requests
-click==7.0                # via cookiecutter, kedro, pip-tools
-cookiecutter==1.6.0       # via kedro
-coverage==4.5.4           # via pytest-cov
-decorator==4.4.1          # via ipython, traitlets
-defusedxml==0.6.0         # via nbconvert
-docutils==0.15.2          # via botocore
-entrypoints==0.3          # via nbconvert
-fsspec==0.6.0             # via s3fs
-future==0.18.2            # via cookiecutter
-idna==2.8                 # via requests
-importlib-metadata==0.23  # via jsonschema, pluggy
-ipykernel==5.1.3          # via ipywidgets, jupyter, jupyter-console, notebook, qtconsole
-ipython-genutils==0.2.0   # via jupyterlab, nbformat, notebook, qtconsole, traitlets
+antlr4-python3-runtime==4.9.3
+    # via omegaconf
+appdirs==1.4.4
+    # via kedro-telemetry
+arrow==0.15.4
+    # via cookiecutter
+atomicwrites==1.3.0
+    # via pytest
+attrs==25.3.0
+    # via
+    #   jsonschema
+    #   kedro
+    #   pytest
+backcall==0.1.0
+    # via ipython
+binaryornot==0.4.4
+    # via cookiecutter
+bleach==3.1.0
+    # via nbconvert
+build==1.2.2.post1
+    # via kedro
+cachetools==5.5.2
+    # via kedro
+certifi==2019.9.11
+    # via requests
+chardet==3.0.4
+    # via binaryornot
+charset-normalizer==3.4.1
+    # via requests
+click==7.0
+    # via
+    #   cookiecutter
+    #   kedro
+cookiecutter==2.6.0
+    # via kedro
+coverage==4.5.4
+    # via pytest-cov
+decorator==4.4.1
+    # via
+    #   ipython
+    #   traitlets
+defusedxml==0.6.0
+    # via nbconvert
+dynaconf==3.2.10
+    # via kedro
+entrypoints==0.3
+    # via nbconvert
+fsspec==2025.3.0
+    # via kedro
+gitdb==4.0.12
+    # via gitpython
+gitpython==3.1.44
+    # via kedro
+idna==2.8
+    # via requests
+importlib-metadata==8.4.0
+    # via
+    #   build
+    #   kedro
+importlib-resources==5.1.3
+    # via kedro
+ipykernel==5.1.3
+    # via
+    #   ipywidgets
+    #   jupyter
+    #   jupyter-console
+    #   notebook
+    #   qtconsole
 ipython==7.9.0
-ipywidgets==7.5.1         # via jupyter
-jedi==0.15.1              # via ipython
-jinja2-time==0.2.0        # via cookiecutter
-jinja2==2.10.3            # via cookiecutter, jinja2-time, nbconvert, notebook
-jmespath==0.9.4           # via boto3, botocore
-jsonschema==3.2.0         # via jupyterlab-launcher, nbformat
-jupyter-client==5.3.4
-jupyter-console==6.0.0    # via jupyter
-jupyter-core==4.6.1       # via jupyter-client, nbconvert, nbformat, notebook, qtconsole
+    # via
+    #   -r requirements.in
+    #   ipykernel
+    #   ipywidgets
+    #   jupyter-console
+ipython-genutils==0.2.0
+    # via
+    #   jupyterlab
+    #   nbformat
+    #   notebook
+    #   qtconsole
+    #   traitlets
+ipywidgets==7.5.1
+    # via jupyter
+jedi==0.15.1
+    # via ipython
+jinja2==2.10.3
+    # via
+    #   cookiecutter
+    #   nbconvert
+    #   notebook
+jsonschema==3.2.0
+    # via
+    #   jupyterlab-launcher
+    #   nbformat
 jupyter==1.0.0
-jupyterlab-launcher==0.10.5  # via jupyterlab
+    # via -r requirements.in
+jupyter-client==5.3.4
+    # via
+    #   -r requirements.in
+    #   ipykernel
+    #   jupyter-console
+    #   notebook
+    #   qtconsole
+jupyter-console==6.0.0
+    # via jupyter
+jupyter-core==4.6.1
+    # via
+    #   jupyter-client
+    #   nbconvert
+    #   nbformat
+    #   notebook
+    #   qtconsole
 jupyterlab==0.31.1
-kedro==0.15.4
-markupsafe==1.1.1         # via jinja2
-memory-profiler==0.55.0   # via kedro
-mistune==0.8.4            # via nbconvert
-mock==3.0.5               # via tables
-more-itertools==7.2.0     # via pytest, zipp
-nbconvert==5.6.1          # via jupyter, notebook
-nbformat==4.4.0           # via ipywidgets, nbconvert, nbstripout, notebook
+    # via -r requirements.in
+jupyterlab-launcher==0.10.5
+    # via jupyterlab
+kedro==0.19.9
+    # via
+    #   -r requirements.in
+    #   kedro-telemetry
+kedro-telemetry==0.6.2
+    # via kedro
+markdown-it-py==3.0.0
+    # via rich
+markupsafe==1.1.1
+    # via jinja2
+mdurl==0.1.2
+    # via markdown-it-py
+mistune==0.8.4
+    # via nbconvert
+more-itertools==10.6.0
+    # via
+    #   kedro
+    #   pytest
+    #   zipp
+nbconvert==5.6.1
+    # via
+    #   jupyter
+    #   notebook
+nbformat==4.4.0
+    # via
+    #   ipywidgets
+    #   nbconvert
+    #   nbstripout
+    #   notebook
 nbstripout==0.3.3
-notebook==6.0.2           # via jupyter, jupyterlab, jupyterlab-launcher, widgetsnbextension
-numexpr==2.7.0            # via tables
-numpy==1.17.4             # via numexpr, pandas, pyarrow, tables
-pandas==0.25.3            # via kedro
-pandocfilters==1.4.2      # via nbconvert
-parso==0.5.1              # via jedi
-pexpect==4.7.0            # via ipython
-pickleshare==0.7.5        # via ipython
-pip-tools==4.2.0          # via kedro
-pluggy==0.13.0            # via pytest
-poyo==0.5.0               # via cookiecutter
-prometheus-client==0.7.1  # via notebook
-prompt-toolkit==2.0.10    # via ipython, jupyter-console
-psutil==5.6.5             # via memory-profiler
-ptyprocess==0.6.0         # via pexpect, terminado
-py==1.8.0                 # via pytest
-pyarrow==0.15.1           # via kedro
-pygments==2.4.2           # via ipython, jupyter-console, nbconvert, qtconsole
-pyrsistent==0.15.5        # via jsonschema
-pytest-cov==2.8.1
-pytest-mock==1.12.0
+    # via -r requirements.in
+notebook==6.0.2
+    # via
+    #   jupyter
+    #   jupyterlab
+    #   jupyterlab-launcher
+    #   widgetsnbextension
+omegaconf==2.3.0
+    # via kedro
+packaging==24.2
+    # via
+    #   build
+    #   pytoolconfig
+pandocfilters==1.4.2
+    # via nbconvert
+parse==1.20.2
+    # via kedro
+parso==0.5.1
+    # via jedi
+pexpect==4.7.0
+    # via ipython
+pickleshare==0.7.5
+    # via ipython
+platformdirs==4.3.7
+    # via pytoolconfig
+pluggy==1.5.0
+    # via
+    #   kedro
+    #   pytest
+pre-commit-hooks==5.0.0
+    # via kedro
+prometheus-client==0.7.1
+    # via notebook
+prompt-toolkit==2.0.10
+    # via
+    #   ipython
+    #   jupyter-console
+ptyprocess==0.6.0
+    # via
+    #   pexpect
+    #   terminado
+py==1.8.0
+    # via pytest
+pygments==2.19.1
+    # via
+    #   ipython
+    #   jupyter-console
+    #   nbconvert
+    #   qtconsole
+    #   rich
+pyproject-hooks==1.2.0
+    # via build
+pyrsistent==0.15.5
+    # via jsonschema
 pytest==3.10.1
-python-dateutil==2.8.0    # via arrow, botocore, jupyter-client, pandas
-python-json-logger==0.1.11  # via kedro
-pytz==2019.3              # via pandas
-pyyaml==5.1.2             # via kedro
-pyzmq==18.1.1             # via jupyter-client, notebook
-qtconsole==4.6.0          # via jupyter
-requests==2.22.0          # via cookiecutter, kedro
-s3fs==0.4.0               # via kedro
-s3transfer==0.2.1         # via boto3
-send2trash==1.5.0         # via notebook
-six==1.13.0               # via bleach, jsonschema, mock, pip-tools, prompt-toolkit, pyarrow, pyrsistent, pytest, python-dateutil, tables, traitlets
-sqlalchemy==1.3.11        # via kedro
-tables==3.5.2             # via kedro
-terminado==0.8.3          # via notebook
-testpath==0.4.4           # via nbconvert
-toposort==1.5             # via kedro
-tornado==6.0.3            # via ipykernel, jupyter-client, notebook, terminado
-traitlets==4.3.3          # via ipykernel, ipython, ipywidgets, jupyter-client, jupyter-core, nbconvert, nbformat, notebook, qtconsole
-urllib3==1.25.7           # via botocore, requests
-wcwidth==0.1.7            # via prompt-toolkit
-webencodings==0.5.1       # via bleach
+    # via
+    #   -r requirements.in
+    #   pytest-cov
+    #   pytest-mock
+pytest-cov==2.8.1
+    # via -r requirements.in
+pytest-mock==1.12.0
+    # via -r requirements.in
+python-dateutil==2.8.0
+    # via
+    #   arrow
+    #   jupyter-client
+python-slugify==8.0.4
+    # via cookiecutter
+pytoolconfig[global]==1.3.1
+    # via rope
+pyyaml==6.0.2
+    # via
+    #   cookiecutter
+    #   kedro
+    #   omegaconf
+pyzmq==18.1.1
+    # via
+    #   jupyter-client
+    #   notebook
+qtconsole==4.6.0
+    # via jupyter
+requests==2.32.3
+    # via
+    #   cookiecutter
+    #   kedro-telemetry
+rich==13.9.4
+    # via
+    #   cookiecutter
+    #   kedro
+rope==1.13.0
+    # via kedro
+ruamel-yaml==0.18.10
+    # via pre-commit-hooks
+ruamel-yaml-clib==0.2.12
+    # via ruamel-yaml
+send2trash==1.5.0
+    # via notebook
+six==1.13.0
+    # via
+    #   bleach
+    #   jsonschema
+    #   prompt-toolkit
+    #   pyrsistent
+    #   pytest
+    #   python-dateutil
+    #   traitlets
+smmap==5.0.2
+    # via gitdb
+terminado==0.8.3
+    # via notebook
+testpath==0.4.4
+    # via nbconvert
+text-unidecode==1.3
+    # via python-slugify
+toml==0.10.2
+    # via kedro
+tomli==2.2.1
+    # via
+    #   build
+    #   pre-commit-hooks
+    #   pytoolconfig
+tornado==6.0.3
+    # via
+    #   ipykernel
+    #   jupyter-client
+    #   notebook
+    #   terminado
+traitlets==4.3.3
+    # via
+    #   ipykernel
+    #   ipython
+    #   ipywidgets
+    #   jupyter-client
+    #   jupyter-core
+    #   nbconvert
+    #   nbformat
+    #   notebook
+    #   qtconsole
+typing-extensions==4.12.2
+    # via
+    #   kedro
+    #   rich
+urllib3==1.25.7
+    # via requests
+wcwidth==0.1.7
+    # via prompt-toolkit
+webencodings==0.5.1
+    # via bleach
 wheel==0.32.2
-whichcraft==0.6.1         # via cookiecutter
-widgetsnbextension==3.5.1  # via ipywidgets
-xlrd==1.2.0               # via kedro
-xlsxwriter==1.2.6         # via kedro
-zipp==0.6.0               # via importlib-metadata
+    # via -r requirements.in
+widgetsnbextension==3.5.1
+    # via ipywidgets
+zipp==0.6.0
+    # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
-# setuptools==41.6.0        # via anyconfig, ipython, jsonschema, pytest
+# setuptools
